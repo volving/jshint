@@ -1,11 +1,11 @@
 "use strict";
 
 module.exports = {
-  reporter: function (res) {
-    var len = res.length;
+  reporter: function (errors) {
+    var len = errors.length;
     var str = "";
 
-    res.forEach(function (r) {
+    errors.forEach(function (r) {
       var file = r.file;
       var err = r.error;
 
